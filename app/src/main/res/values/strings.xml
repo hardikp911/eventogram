@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Eventogram</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+
+    <!-- Categories -->
+    <string name ="Party"> party </string>
+    <string name = "Study"> Study </string>
+    <string name = "Events" >Events </string>
+    <string name="alerts">Alerts</string>
+    <string name="slogan">There\'s a lot happening around you our mission is to</string>
+    <string name="slogan1">provide what\'s happening near you !!</string>
+
+
+
+    <!-- Titles and Descriptions -->
+    <string name = "featured_events" > All Featured Events </string>
+    <string name = "featured_events_description"> All the Events that are featured and have the top demand in college! </string>
+    <string name = "most_viewed_locations" > Most Viewed </string>
+    <string name = "categories" > Categories </string>
+    <string name = "view_all" > View All </string>
+    <string name = "search_text" > Search .. </string>
+
+
+</resources>
