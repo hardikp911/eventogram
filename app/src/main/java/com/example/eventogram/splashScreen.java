@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class splashScreen extends AppCompatActivity {
 
-    private  static int SPLASH_SCREEN = 3000;
+    private  static int SPLASH_SCREEN = 2000;
     ImageView image,image2;
     TextView logo,slogan;
     Animation topAnim,bottomAnim;
@@ -40,7 +40,7 @@ public class splashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
-                Intent intent = new Intent(splashScreen.this,LoginActivity.class);
+                Intent intent = new Intent(splashScreen.this, userDashboard.class);
                 startActivity(intent);
                 finish();
             }

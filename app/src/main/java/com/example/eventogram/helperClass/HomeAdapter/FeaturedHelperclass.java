@@ -5,6 +5,7 @@ public class FeaturedHelperclass {
     int image;
     String title , desc;
 
+
     public FeaturedHelperclass(int image, String title, String desc) {
         this.image = image;
         this.title = title;

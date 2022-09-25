@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 
 import com.example.eventogram.R;
 import com.example.eventogram.helperClass.HomeAdapter.FeaturedAdapter;
@@ -26,7 +28,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class userDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class userDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener , allFeaturedEvents {
 
     RecyclerView featuredRecycler,featuredRecycler1;
     RecyclerView.Adapter adapter;
@@ -35,6 +37,7 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
     ImageView menuicon;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    
 
 
     @SuppressLint("MissingInflatedId")
@@ -98,6 +101,24 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+
+        int id = item.getItemId();
+
+        if(id == R.id.nav_all_catigories)
+        {
+            startActivity(new Intent(getApplicationContext(), AllCategories.class));
+
+        }
+
+//        Switch(item.getItemId()){
+//            case R.id.nav_all_catigories:{
+//                startActivity(new Intent(getApplicationContext(), AllCategories.class));
+//                break;
+//            }
+//
+//        }
+
+
         return true;
     }
 
@@ -123,6 +144,8 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
 
     private void featuredRecycler() {
 
+
+
         featuredRecycler.setHasFixedSize(true);
         featuredRecycler.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         ArrayList<FeaturedHelperclass> featuredLocations = new ArrayList<>();
@@ -139,4 +162,9 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
     }
 
 
+    @Override
+    public void onItemClick(int position) {
+
+
+    }
 }
