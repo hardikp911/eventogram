@@ -27,11 +27,11 @@
     <item android:title="Profile">
         <menu>
             <group android:checkableBehavior="single">
-                <item
+<!--                <item-->
 
-                    android:id="@+id/nav_login"
-                    android:title="Login"
-                    android:icon="@drawable/user"/>
+<!--                    android:id="@+id/nav_login"-->
+<!--                    android:title="Login"-->
+<!--                    android:icon="@drawable/user"/>-->
                 <item
 
                     android:id="@+id/nav_Profile"
