@@ -56,10 +56,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="carRental"
+                    android:text="Meeting Events"
                     android:fontFamily="@font/aclonica"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:padding="25dp"/>
                 <Button
                     android:layout_width="wrap_content"
@@ -77,8 +77,8 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/categories_rent_car_icon"
-                android:layout_marginTop="-40dp"
+                android:src="@drawable/business"
+                android:layout_marginTop="-3dp"
                 android:layout_alignParentRight="true"
                 />
         </RelativeLayout>
@@ -96,16 +96,19 @@
                 android:layout_height="150dp"
                 android:background="@drawable/food_back"
                 >
+
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/categories_restaurant_icon"
-                    android:layout_marginLeft="20dp"
-                    />
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ecology" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cafes"
+                    android:text="Enviroment\nEvent"
                     android:textColor="@color/white"
                     android:fontFamily="@font/aclonica"
                     android:layout_alignParentRight="true"
@@ -141,11 +144,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HOSPITAL"
+                    android:text="Blood Donation\ncamp"
                     android:fontFamily="@font/aclonica"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:padding="25dp"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -162,8 +166,8 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/hospital_image"
-                android:layout_marginTop="-15dp"
+                android:src="@drawable/blooddonation"
+                android:layout_marginTop="-10dp"
                 android:layout_alignParentRight="true"
                 />
         </RelativeLayout>
@@ -183,17 +187,17 @@
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/categories_shop_icon"
+                    android:src="@drawable/book"
                     android:layout_marginLeft="20dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shops"
+                    android:text="Study events"
                     android:textColor="@color/white"
                     android:fontFamily="@font/aclonica"
                     android:layout_alignParentRight="true"
-                    android:textSize="30sp"
+                    android:textSize="25sp"
                     android:padding="25dp"/>
                 <Button
                     android:layout_width="wrap_content"
@@ -211,6 +215,7 @@
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -225,10 +230,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="carRental"
+                    android:text="Meeting Events"
                     android:fontFamily="@font/aclonica"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:padding="25dp"/>
                 <Button
                     android:layout_width="wrap_content"
@@ -246,8 +251,8 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/categories_rent_car_icon"
-                android:layout_marginTop="-40dp"
+                android:src="@drawable/business"
+                android:layout_marginTop="-3dp"
                 android:layout_alignParentRight="true"
                 />
         </RelativeLayout>
@@ -265,16 +270,19 @@
                 android:layout_height="150dp"
                 android:background="@drawable/food_back"
                 >
+
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/categories_restaurant_icon"
-                    android:layout_marginLeft="20dp"
-                    />
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ecology" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cafes"
+                    android:text="Enviroment\nEvent"
                     android:textColor="@color/white"
                     android:fontFamily="@font/aclonica"
                     android:layout_alignParentRight="true"
@@ -310,11 +318,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HOSPITAL"
+                    android:text="Blood Donation\ncamp"
                     android:fontFamily="@font/aclonica"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:padding="25dp"/>
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -331,8 +340,8 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/hospital_image"
-                android:layout_marginTop="-15dp"
+                android:src="@drawable/blooddonation"
+                android:layout_marginTop="-10dp"
                 android:layout_alignParentRight="true"
                 />
         </RelativeLayout>
@@ -352,13 +361,102 @@
                 <ImageView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/categories_shop_icon"
+                    android:src="@drawable/book"
                     android:layout_marginLeft="20dp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shops"
+                    android:text="Study events"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aclonica"
+                    android:layout_alignParentRight="true"
+                    android:textSize="25sp"
+                    android:padding="25dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Expandall"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_bk2"
+                android:layout_margin="20dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Meeting Events"
+                    android:fontFamily="@font/aclonica"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:padding="25dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Expandall"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/business"
+                android:layout_marginTop="-3dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp"
+            android:layout_margin="20dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/food_back"
+                >
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/ecology" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enviroment\nEvent"
                     android:textColor="@color/white"
                     android:fontFamily="@font/aclonica"
                     android:layout_alignParentRight="true"
@@ -380,6 +478,93 @@
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_bk3"
+                android:layout_margin="20dp"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Donation\ncamp"
+                    android:fontFamily="@font/aclonica"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:padding="25dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Expandall"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/blooddonation"
+                android:layout_marginTop="-10dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            app:cardElevation="8dp"
+            android:layout_margin="20dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/round_bk5"
+                >
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/book"
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Study events"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/aclonica"
+                    android:layout_alignParentRight="true"
+                    android:textSize="25sp"
+                    android:padding="25dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Expandall"
+                    android:textColor="@color/white"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
 
 
 

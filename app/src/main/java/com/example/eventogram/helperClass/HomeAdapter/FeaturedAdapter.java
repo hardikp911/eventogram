@@ -15,10 +15,12 @@ import java.util.ArrayList;
 
 public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.FeaturedViewHolder> {
 
+
     ArrayList<FeaturedHelperclass> featuredLocations;
 
     public FeaturedAdapter(ArrayList<FeaturedHelperclass> featuredLocations) {
         this.featuredLocations = featuredLocations;
+
     }
 
     @NonNull
@@ -47,7 +49,7 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
         return featuredLocations.size();
     }
 
-    public  static  class FeaturedViewHolder extends RecyclerView.ViewHolder{
+    public class FeaturedViewHolder extends RecyclerView.ViewHolder{
 
         ImageView image;
         TextView title, desc;
@@ -57,6 +59,8 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
             image = itemView.findViewById(R.id.featured_image_1);
             title = itemView.findViewById(R.id.featured_Title_1);
             desc = itemView.findViewById(R.id.featured_description_1);
+            // recycler view
+
 
         }
     }

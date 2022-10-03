@@ -28,7 +28,7 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
-public class userDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener , allFeaturedEvents {
+public class userDashboard extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
 
     RecyclerView featuredRecycler,featuredRecycler1;
     RecyclerView.Adapter adapter;
@@ -37,10 +37,18 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
     ImageView menuicon;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
-    
 
 
-    @SuppressLint("MissingInflatedId")
+// most view card view trying to clickable
+
+    ArrayList<MostViewedHelperClass> mostViewedHelperClasses = new ArrayList<>();
+    int[] mostViewedHelperClassesimage = {R.drawable.collegestudy,
+            R.drawable.collegestudy
+           ,R.drawable.collegestudy,
+            R.drawable.collegestudy,
+            R.drawable.collegestudy,
+            R.drawable.collegestudy};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,14 +59,39 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
         featuredRecycler = findViewById(R.id.featured_recycler);
         featuredRecycler();
         featuredRecycler1 = findViewById(R.id.featured_recycler1);
-        featuredRecycler1();
+
+//        featuredRecycler1();
 //        featuredRecycler2 = findViewById(R.id.featured_recycler2);
 //        featuredRecycler();
+
+
+
+// start of mostViewed class view
+
+        setUpMostViewed();
+//        ArrayList<MostViewedHelperClass> featuredViewHolder = null;
+//        MostViewedAdpater adapter = new MostViewedAdpater(this,featuredViewHolder);
+//        ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
+//         featuredRecycler1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+
+        featuredRecycler1.setAdapter(adapter);
+        featuredRecycler1.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
+//        adapter = new MostViewedAdpater(mostViewedLocations);
+//        featuredRecycler1.setAdapter(adapter)
+
+
+
+
+        // end of mostViewed class view
+
 
         //menu hooks
         menuicon = findViewById(R.id.menu_icon);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_layout);
+
+        //recycler practice
+
 
         //navigation Drawer
 
@@ -89,6 +122,24 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
         });
 
     }
+
+    //most viewed recycler view
+
+    private void setUpMostViewed(){
+
+        String[] mostViewedTitle = getResources().getStringArray(R.array.Most_viewed_photos_title);
+        String[] mostViewedDesc = getResources().getStringArray(R.array.Most_viewed_photos_desc);
+        for ( int i = 0 ; i <mostViewedTitle.length ;i++ ) {
+            mostViewedHelperClasses.add (new MostViewedHelperClass(mostViewedTitle[i],
+                    mostViewedDesc[i],mostViewedHelperClassesimage[i]));
+
+            }
+
+    }
+
+
+
+    //most viewed ended here
 
     @Override
     public void onBackPressed() {
@@ -124,23 +175,23 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
 
     //recycler view
 
-    private void featuredRecycler1() {
-
-        featuredRecycler1.setHasFixedSize(true);
-        featuredRecycler1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-
-        ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegealert,"collegeAlert", " blablablablablablbalbalba"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegeparty,"collegeParty", " blablablablablablbalbalba"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegestudy,"collegeStudy", " blablablablablablbalbalba"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegealert,"collegeAlert", " blablablablablablbalbalba"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegeparty,"collegeParty", " blablablablablablbalbalba"));
-        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegestudy,"collegeStudy", " blablablablablablbalbalba"));
-
-
-        adapter = new MostViewedAdpater(mostViewedLocations);
-        featuredRecycler1.setAdapter(adapter);
-    }
+//    private void featuredRecycler1() {
+//
+//        featuredRecycler1.setHasFixedSize(true);
+//      featuredRecycler1.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+//
+//        ArrayList<MostViewedHelperClass> mostViewedLocations = new ArrayList<>();
+//        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegealert,"collegeAlert", " blablablablablablbalbalba"));
+//        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegeparty,"collegeParty", " blablablablablablbalbalba"));
+//        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegestudy,"collegeStudy", " blablablablablablbalbalba"));
+//        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegealert,"collegeAlert", " blablablablablablbalbalba"));
+//        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegeparty,"collegeParty", " blablablablablablbalbalba"));
+//        mostViewedLocations.add(new MostViewedHelperClass(R.drawable.collegestudy,"collegeStudy", " blablablablablablbalbalba"));
+//
+//
+//        adapter = new MostViewedAdpater(mostViewedLocations);
+//        featuredRecycler1.setAdapter(adapter);
+//    }
 
     private void featuredRecycler() {
 
@@ -162,9 +213,5 @@ public class userDashboard extends AppCompatActivity implements NavigationView.O
     }
 
 
-    @Override
-    public void onItemClick(int position) {
 
-
-    }
 }

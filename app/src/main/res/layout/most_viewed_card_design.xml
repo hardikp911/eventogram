@@ -47,16 +47,16 @@
         <TextView
             android:id="@+id/featured_description_1"
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="167dp"
+            android:layout_height="80dp"
             android:layout_below="@+id/mv_rating"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+
+
             android:layout_toRightOf="@+id/mv_image"
 
-
-            android:text="Sample data Sample data Sample data Sample data Sample dataSample dataSample data"
-
-            />
+            android:text="Sample data Sample data Sample data Sample data Sample dataSample dataSample data" />
 
 
     </RelativeLayout>

@@ -104,7 +104,12 @@
                             android:inputType="textPassword"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
-                    <CheckBox
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+                    <RadioButton
                         android:id="@+id/isTeacher"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -114,7 +119,8 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
 
-                    <CheckBox
+
+                    <RadioButton
                         android:id="@+id/isStudent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -124,6 +130,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/isTeacher"
                         app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
+
+                    </RadioGroup>
 
                     <Button
                         android:id="@+id/RegisterButton"
@@ -141,6 +149,7 @@
                         android:textColor="#8b62cc"
                         android:textSize="17sp"
                         android:textStyle="bold" />
+
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

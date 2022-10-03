@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -36,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
     boolean valid = true;
     FirebaseAuth firebaseAuth;
     FirebaseFirestore firebaseFirestore;
-    CheckBox isTeacher, isStudent;
+    RadioButton isTeacher, isStudent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

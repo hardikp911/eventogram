@@ -12,6 +12,13 @@ public class MostViewedHelperClass {
         this.desc = desc;
     }
 
+    public MostViewedHelperClass(String s, String title, int i) {
+
+        this.image = i;
+        this.title = title;
+        this.desc = s;
+    }
+
     public int getImage() {
         return image;
     }

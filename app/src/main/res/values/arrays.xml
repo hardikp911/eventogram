@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //most view resources
+
+
+
+    <string-array name="Most_viewed_photos_title" >
+        <item>fest2018</item>
+        <item>fest2019</item>
+        <item>fest2020</item>
+        <item>fest2021</item>
+        <item>fest2021</item>
+
+    </string-array>
+    <string-array name="Most_viewed_photos_desc">
+        <item>blabla bla blab abjaashdbndjifuffnfnfm</item>
+        <item>blabla bla blab abjaashdbndjifuffnfnfm</item>
+        <item>blabla bla blab abjaashdbndjifuffnfnfm</item>
+        <item>blabla bla blab abjaashdbndjifuffnfnfm</item>
+        <item>blabla bla blab abjaashdbndjifuffnfnfm</item>
+    </string-array>
+</resources>
