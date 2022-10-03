@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "264086615396",
+    "project_id": "eventmanagercollege",
+    "storage_bucket": "eventmanagercollege.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264086615396:android:5a9f9e1289063308747671",
+        "android_client_info": {
+          "package_name": "com.example.eventogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264086615396-804ldlves3kodh9uemvi4922gl6tu84c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW89sQ584EfW5LgbQ9d9TGD86sL-u5ZMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264086615396-804ldlves3kodh9uemvi4922gl6tu84c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
