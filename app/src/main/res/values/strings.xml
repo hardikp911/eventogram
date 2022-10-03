@@ -1,41 +1,31 @@
 <resources>
-    <string name="app_name">Eventogram</string>
-    <string name="login_email_hint">Email</string>
-    <string name="login_password_hint">Password</string>
-    <string name="title_activity_splash_screen">SplashScreen</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-    <string name="Expandall"> Expand all</string>
-<!--    <string name="Party"> party </string>-->
-<!--    <string name="Party"> party </string>-->
+	<string name="app_name">Eventogram</string>
+	<string name="title_activity_splash_screen">splashScreen</string>
+	<!-- Strings used for fragments for navigation -->
+	<string name="first_fragment_label">First Fragment</string>
+	<string name="second_fragment_label">Second Fragment</string>
+	<string name="next">Next</string>
+	<string name="previous">Previous</string>
+	<string name="about_me">About Me</string>
+	<string name="my_desc">Doing at the sweet spot between aesthetics and elegance to give life to your brand.My opinion belong to nobody but myself.</string>
+	<string name="skills">Skills</string>
+	<string name="contact">Contact</string>
 
+	<string name="hello_first_fragment">Hello first fragment</string>
+	<string name="dashboard_title">Dashboard</string>
+	<string name="dashboard_heading">Find Amazing events happening around you.</string>
+	<string name="dashboard_sub_title">480 events around you</string>
+	<string name="search_bar_hint">search for an event...</string>
+	<string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan in nisl nisi scelerisque eu. Semper feugiat nibh sed pulvinar proin gravida. Quisque sagittis purus sit amet. Faucibus turpis in eu mi bibendum. Quisque egestas diam in arcu cursus euismod quis viverra. Dictumst quisque sagittis purus sit amet volutpat consequat. Tristique risus nec feugiat in. Nunc id cursus metus aliquam. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Leo integer malesuada nunc vel. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Pulvinar etiam non quam lacus suspendisse faucibus. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Vehicula ipsum a arcu cursus vitae congue.  </string>
+	<string name="location">Vagator Beach, Goa, India</string>
+	<string name="desc">Sunburn Festival is Asia\'s biggest electronic music festival, and this December the festival returns to its homeland – Goa – for three sprawling days of house, EDM and pop on Vagator Beach. Recent lineups have included dance royalty such as Martin Garrix, Afrojack, Dimitri Vegas and Like Mike and many more </string>
+	<string name="slogan">There\'s a lot happening around you our mission is to</string>
+	<string name="slogan1">provide what\'s happening near you !!</string>
 
+	<string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
-    <!-- Categories -->
-    <string name="Party"> party </string>
-    <string name="Study"> Study </string>
-    <string name="Events">Events </string>
-    <string name="alerts">Alerts</string>
-    <string name="slogan">There\'s a lot happening around you our mission is to</string>
-    <string name="slogan1">provide what\'s happening near you !!</string>
-
-
-    <!-- Titles and Descriptions -->
-    <string name="featured_events"> All Featured Events </string>
-    <string name="featured_events_description"> All the Events that are featured and have the top demand in college! </string>
-    <string name="most_viewed_locations"> Most Viewed </string>
-    <string name="categories"> Categories </string>
-    <string name="view_all"> View All </string>
-    <string name="search_text"> Search .. </string>
-
-
-
-
-
-
-
+	<string name="login"><u>I already have an account , login</u></string>
+	<string name="register_text"><u>Register</u></string>
+	<string name="login_text"><u>Login</u></string>
 
 </resources>
