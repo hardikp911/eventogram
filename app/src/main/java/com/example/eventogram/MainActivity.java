@@ -23,26 +23,37 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
 
-    RecyclerView recyclerView;
+//    RecyclerView recyclerView;
     EventsRecyclerViewAdapter eventsRecyclerViewAdapter;
 
     //drawer icon
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     ImageView menuicon;
+    Button eventDetails;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        recyclerView = findViewById(R.id.recyclerView);
+//        recyclerView = findViewById(R.id.recyclerView);
         initRecyclerView();
+        eventDetails = findViewById(R.id.Details);
 
         //drawer icon values to call
         menuicon = findViewById(R.id.menu_icon);
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.navigation_layout);
 
+
+        eventDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(),event_On_Details.class);
+                startActivity(intent);
+            }
+        });
         //navigation Drawer working calling a function to perform tasks
         navigationDrawer();
     }
@@ -62,6 +73,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(id == R.id.nav_profile)
         {
             startActivity(new Intent(getApplicationContext(), logoutProfile.class));
+            finish();
 
 
         }
@@ -106,8 +118,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         eventsRecyclerViewAdapter = new EventsRecyclerViewAdapter(EventsRepo.getEventsRepo().getEventModelList());
         Log.i("data-->",""+ EventsRepo.getEventsRepo().getEventModelList().size());
-        recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.setAdapter(eventsRecyclerViewAdapter);
+//        recyclerView.setLayoutManager(linearLayoutManager);
+//        recyclerView.setAdapter(eventsRecyclerViewAdapter);
         eventsRecyclerViewAdapter.notifyDataSetChanged();
     }
 

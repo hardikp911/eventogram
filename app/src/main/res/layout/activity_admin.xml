@@ -10,7 +10,9 @@
 	android:padding="10dp"
 	android:background="#fcfcfc"
 	android:gravity="center"
-	android:id="@+id/linearLayout">
+	android:id="@+id/linearLayout"
+	tools:context=".Admin"
+	>
 
 
 	<TextView
@@ -23,22 +25,29 @@
 		android:textColor="@color/black"
 		android:textSize="40dp"
 		android:textStyle="bold" />
-
-	<LinearLayout
-		android:clipToPadding="false"
-		android:gravity="center"
-		android:orientation="horizontal"
+	<GridLayout
+		android:id="@+id/mainGrid1"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:rowCount="3"
+		android:columnCount="2"
+		android:padding="20dp"
+		>
 
 
-		<android.support.v7.widget.CardView
+
+		<androidx.cardview.widget.CardView
 			android:foreground="?android:attr/selectableItemBackground"
-			android:clickable="true"
+
 			android:id="@+id/createEvent"
 			android:layout_width="160dp"
 			android:layout_height="190dp"
-			android:layout_margin="10dp">
+			android:layout_margin="10dp"
+			android:layout_weight="1"
+
+
+			>
 			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
@@ -70,8 +79,8 @@
 					android:textColor="@android:color/darker_gray"/>
 
 			</LinearLayout>
-		</android.support.v7.widget.CardView>
-		<android.support.v7.widget.CardView
+		</androidx.cardview.widget.CardView>
+		<androidx.cardview.widget.CardView
 			android:foreground="?android:attr/selectableItemBackground"
 			android:clickable="true"
 			android:layout_width="160dp"
@@ -108,21 +117,19 @@
 					android:textColor="@android:color/darker_gray"/>
 
 			</LinearLayout>
-		</android.support.v7.widget.CardView>
+		</androidx.cardview.widget.CardView>
 
-	</LinearLayout>
-	<LinearLayout
-		android:clipToPadding="false"
-		android:gravity="center"
-		android:orientation="horizontal"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
-		<android.support.v7.widget.CardView
+
+
+
+		<androidx.cardview.widget.CardView
 			android:foreground="?android:attr/selectableItemBackground"
 			android:clickable="true"
 			android:layout_width="160dp"
 			android:layout_height="190dp"
-			android:layout_margin="10dp">
+			android:layout_margin="10dp"
+
+			>
 			<LinearLayout
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
@@ -154,98 +161,51 @@
 					android:textColor="@android:color/darker_gray"/>
 
 			</LinearLayout>
-		</android.support.v7.widget.CardView>
-<!--		<android.support.v7.widget.CardView-->
-<!--			android:foreground="?android:attr/selectableItemBackground"-->
-<!--			android:clickable="true"-->
-<!--			android:layout_width="160dp"-->
-<!--			android:layout_height="190dp"-->
-<!--			android:layout_margin="10dp">-->
+		</androidx.cardview.widget.CardView>
 
-<!--			<LinearLayout-->
-<!--				android:layout_width="match_parent"-->
-<!--				android:layout_height="match_parent"-->
-<!--				android:gravity="center"-->
-<!--				android:orientation="vertical">-->
+		<androidx.cardview.widget.CardView
+			android:foreground="?android:attr/selectableItemBackground"
+			android:clickable="true"
+			android:layout_width="160dp"
+			android:layout_height="190dp"
+			android:layout_margin="10dp">
 
-<!--				<ImageView-->
-<!--					android:layout_width="64dp"-->
-<!--					android:layout_height="64dp"-->
-<!--					android:background="@drawable/cerclebackgroundyello"-->
-<!--					android:padding="10dp"-->
-<!--					android:src="@drawable/ic_attach_file_black_24dp" />-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:orientation="vertical">
 
-<!--				<TextView-->
-<!--					android:layout_width="wrap_content"-->
-<!--					android:layout_height="wrap_content"-->
-<!--					android:layout_marginTop="10dp"-->
-<!--					android:text="Links"-->
-<!--					android:textStyle="bold" />-->
+				<ImageView
+					android:layout_width="64dp"
+					android:layout_height="64dp"
+					android:background="@drawable/cerclebackgroundyello"
+					android:padding="10dp"
+					android:src="@drawable/ic_attach_file_black_24dp" />
 
-<!--				<View-->
-<!--					android:layout_width="match_parent"-->
-<!--					android:layout_height="1dp"-->
-<!--					android:layout_margin="10dp"-->
-<!--					android:background="@color/lightgray" />-->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="10dp"
+					android:text="Extra"
+					android:textStyle="bold" />
 
-<!--				<TextView-->
-<!--					android:layout_width="wrap_content"-->
-<!--					android:layout_height="wrap_content"-->
-<!--					android:gravity="center"-->
-<!--					android:padding="5dp"-->
-<!--					android:text="Check your bank activities"-->
-<!--					android:textColor="@android:color/darker_gray" />-->
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_margin="10dp"
+					android:background="@color/lightgray" />
 
-<!--			</LinearLayout>-->
-<!--		</android.support.v7.widget.CardView>-->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:padding="5dp"
+					android:text="Extra updates"
+					android:textColor="@android:color/darker_gray" />
 
-	</LinearLayout>
-<!--	<LinearLayout-->
-<!--		android:clipToPadding="false"-->
-<!--		android:gravity="center"-->
-<!--		android:orientation="horizontal"-->
-<!--		android:layout_width="match_parent"-->
-<!--		android:layout_height="wrap_content">-->
-<!--		<android.support.v7.widget.CardView-->
-<!--			android:foreground="?android:attr/selectableItemBackground"-->
-<!--			android:clickable="true"-->
-<!--			android:layout_width="340dp"-->
-<!--			android:layout_height="150dp"-->
-<!--			android:layout_margin="10dp">-->
-<!--			<LinearLayout-->
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
 
-<!--				android:layout_width="match_parent"-->
-<!--				android:layout_height="match_parent"-->
-<!--				android:orientation="vertical"-->
-<!--				android:gravity="center">-->
-<!--				<ImageView-->
-<!--					android:layout_width="64dp"-->
-<!--					android:layout_height="64dp"-->
-<!--					android:background="@drawable/cerclebackgroundpurple"-->
-<!--					android:src="@drawable/ic_wifi_black_24dp"-->
-<!--					android:padding="10dp"/>-->
-<!--				<TextView-->
-<!--					android:layout_width="wrap_content"-->
-<!--					android:layout_height="wrap_content"-->
-<!--					android:textStyle="bold"-->
-<!--					android:layout_marginTop="10dp"-->
-<!--					android:text="Add"/>-->
-<!--				<View-->
-<!--					android:layout_width="match_parent"-->
-<!--					android:layout_height="1dp"-->
-<!--					android:background="@color/lightgray"-->
-<!--					android:layout_margin="10dp"/>-->
-<!--				<TextView-->
-<!--					android:layout_width="wrap_content"-->
-<!--					android:layout_height="wrap_content"-->
-<!--					android:gravity="center"-->
-<!--					android:text="Check your bank activities"-->
-<!--					android:padding="5dp"-->
-<!--					android:textColor="@android:color/darker_gray"/>-->
-
-<!--			</LinearLayout>-->
-<!--		</android.support.v7.widget.CardView>-->
-
-
-<!--	</LinearLayout>-->
+</GridLayout>
 </LinearLayout>

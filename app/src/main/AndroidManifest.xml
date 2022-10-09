@@ -13,12 +13,32 @@
 		android:theme="@style/Theme.Eventogram"
 		tools:targetApi="31">
 		<activity
-			android:name=".Event_CreateForm"
+			android:name=".eventcreationform"
 			android:exported="false">
 			<meta-data
 				android:name="android.app.lib_name"
 				android:value="" />
 		</activity>
+		<activity
+			android:name=".eventregistrationform"
+			android:exported="false">
+			<meta-data
+				android:name="android.app.lib_name"
+				android:value="" />
+		</activity>
+		<activity
+			android:name=".fetchuserdata"
+			android:exported="false">
+			<meta-data
+				android:name="android.app.lib_name"
+				android:value="" />
+		</activity> <!-- <activity -->
+		<!-- android:name=".CheckMainActivity" -->
+		<!-- android:exported="false"> -->
+		<!-- <meta-data -->
+		<!-- android:name="android.app.lib_name" -->
+		<!-- android:value="" /> -->
+		<!-- </activity> -->
 		<activity
 			android:name=".logoutProfile"
 			android:exported="false">
@@ -41,7 +61,6 @@
 
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
-
 			<meta-data
 				android:name="android.app.lib_name"
 				android:value="" />
@@ -63,6 +82,8 @@
 		<activity
 			android:name=".Login"
 			android:exported="false">
+
+
 			<meta-data
 				android:name="android.app.lib_name"
 				android:value="" />
